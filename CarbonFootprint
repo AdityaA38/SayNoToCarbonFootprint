@@ -1,0 +1,99 @@
+//
+//  ContentView.swift
+//  CarbonFootprint
+//
+//  Created by Aditya Akella on 3/5/23.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            VStack{
+                Text("Homepage")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Image("Home")
+                    .resizable()
+                    .frame(width: 350, height: 250)
+                VStack{
+                    Text("My goal is to give everyhouse an overview of what A carbon footprint is and how to reduce it. ")
+                    Spacer()
+                        .frame(height:20)
+                    Text("Hi My Name is Aditya, and my goal is to help reduce the carbon footprint of every household across the globe!")
+                }
+            }
+            
+                        .tabItem {
+                            Image(systemName: "1.circle.fill")
+                            Text("Homepage")
+                        }
+            VStack{
+                Text("What is a Carbon Footprint")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Image("Carbon")
+                    .resizable()
+                    .frame(width: 350, height: 250)
+                VStack{
+                    Text("A carbon footprint is the amount of carbon dioxide and greenhouse gasses produced from a household, or just by our actions in genral.")
+                    Spacer()
+                        .frame(height:20)
+                    Text("The average carbon footprint for a person in the United States in around 16 tons of CO2.")
+                    Spacer()
+                        .frame(height:20)
+                    Text("Your Carbon Footprint is formed by: ")
+                }
+                VStack{
+                    Spacer()
+                        .frame(height:20)
+                    Text("The food you eat: The more processed food you eat, the more your carbon emmision is.")
+                    Spacer()
+                        .frame(height:20)
+                    Text("The more you use your car which runs on fossil fuels, the more carbon it is releasing into the environment")
+                    Spacer()
+                        .frame(height:20)
+                    Text("The more energy you use at home, the more your carbon footprint is.")
+                }
+                }
+            
+                        .tabItem {
+                            Image(systemName: "2.square.fill")
+                            Text(" Carbon FootPrint")
+                        }
+        VStack{
+            Text("How do we reduce our Carbon Footprint")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            Image("Save")
+                .resizable()
+                .frame(width: 350, height: 250)
+            VStack{
+                Text("There are many ways that we can help reduce our Carbon Footprint. Some of these ways include:")
+                Spacer()
+                    .frame(height:20)
+                Text("Tell your community about these ways on how to reduce your footprint.")
+            }
+            VStack{
+                Spacer()
+                    .frame(height:20)
+                Text("Eat more vegetarian food rather than processed food, and also start gardening.")
+                Spacer()
+                    .frame(height:20)
+                Text("By an electric car, or start walking or biking whenever your can")
+                Spacer()
+                    .frame(height:20)
+                Text("Use less energy at your home, and install solar panels.")
+            }
+            }
+                        .tabItem {
+                            Image(systemName: "3.square.fill")
+                            Text("Reduce It")
+                        }
+                }    }
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+}
